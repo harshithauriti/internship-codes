@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int n,d;
+    scanf("%d %d",&n,&d);
+    int a[n],sum=0,i;
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+    for(i=0;i<n;i++)
+    {
+        int m=a[i];
+        if(sum<d)
+            sum=sum+m;
+        else
+        {
+            printf("%d",i);
+            break;
+        }
+    }
+    return 0;
+}
